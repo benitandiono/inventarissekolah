@@ -7,7 +7,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-# Sistem Inventaris Sekolah
+# Sistem Inventaris Sekolah Berbasis Web
 
 Desain aplikasi dengan konsep  
 ## Modern, Transparan & Profesional  
@@ -93,24 +93,17 @@ untuk manajemen inventaris sekolah.
 
 
 
-## Teknologi
 
-Sistem Informasi Inventory Gudang menggunakan beberapa Teknologi diantaranya :
-
-- Laravel - The PHP Framework for Web Artisans
-- JavaScript - JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.
-- jQuery - jQuery is a JavaScript framework designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.
-- Bootstrap - Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. 
 
 
 ## Installasi
 
 Lakukan Clone Project/Unduh manual 
 
-Buat database dengan nama 'inventorygudang'
+Buat database dengan nama 'inventarissekolah'
 
 Jika melakukan Clone Project, rename file .env.example dengan env dan hubungkan
-database nya dengan mengisikan nama database, 'DB_DATABASE=inventorygudang'
+database nya dengan mengisikan nama database, 'DB_DATABASE=inventarissekolah'
 
 
 Kemudian, Ketik pada terminal :
