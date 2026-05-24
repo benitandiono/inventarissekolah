@@ -772,8 +772,8 @@ body { font-family: 'Inter', 'Segoe UI', sans-serif; background: linear-gradient
         <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user nav-link-user-pro">
             <div class="avatar-pro-wrapper">
                 <img alt="avatar"
-                     src="{{ auth()->user()->avatar ? asset('storage/avatars/'.auth()->user()->avatar) : asset('assets/img/avatar/avatar-1.png') }}"
-                     class="avatar-pro-img">
+     src="{{ auth()->user()->avatar ? asset('storage/'.auth()->user()->avatar) : asset('assets/img/avatar/avatar-1.png') }}"
+     class="avatar-pro-img">
             </div>
             <div class="d-sm-none d-lg-inline-block text-white font-weight-semibold user-name-text">
                 Hi, {{ auth()->user()->name }}
