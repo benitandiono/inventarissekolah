@@ -62,49 +62,34 @@ class ProfileController extends Controller
     /**
      * Update avatar
      */
-   public function updateAvatar(Request $request)
+  public function updateAvatar(Request $request)
 {
-    // Validasi file
     $request->validate([
-
         'avatar' => 'required|image|mimes:jpg,jpeg,png|max:10240',
-
     ], [
-
         'avatar.required' => 'Pilih foto terlebih dahulu',
         'avatar.image'    => 'File harus berupa gambar',
         'avatar.mimes'    => 'Format harus JPG atau PNG',
-        'avatar.max'      => 'Ukuran foto maksimal 2 MB',
-
+        'avatar.max'      => 'Ukuran foto maksimal 10 MB',
     ]);
-
 
     $user = $request->user();
 
-
-    // Hapus avatar lama
-    if ($user->avatar && Storage::exists('public/avatars/' . $user->avatar)) {
-
-        Storage::delete('public/avatars/' . $user->avatar);
-
+    if ($user->avatar && Storage::disk('public')->exists($user->avatar)) {
+        Storage::disk('public')->delete($user->avatar);
     }
 
-
-    // Simpan avatar baru
     $file = $request->file('avatar');
-
     $filename = time() . '.' . $file->getClientOriginalExtension();
 
-    $file->storeAs('public/avatars', $filename);
+    $path = $file->storeAs('avatars', $filename, 'public');
 
-
-    // Update database
-    $user->avatar = $filename;
+    $user->avatar = $path;
     $user->save();
 
-
     return response()->json([
-        'message' => 'Foto profil berhasil diperbarui'
+        'message' => 'Foto profil berhasil diperbarui',
+        'avatar_url' => asset('storage/' . $path),
     ]);
 }
 
