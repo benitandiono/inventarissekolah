@@ -121,16 +121,40 @@ Akses Aplikasi di Web browser
 
 
 
-## Screenshoot
-![Dashboard](images/Screenshot%202026-05-24%20205212.png)
+## 📸 Tampilan Aplikasi
 
-![Dashboard](images/Halaman_aset.png)
+### 🏠 Dashboard
+![Dashboard](images/dashboard.png)
 
-![Screenshot_926](https://github.com/dwipurnomo12/inventorygudang/assets/105181667/b7e9824b-c8b5-4078-8d7d-7b26ffaf5460)
+---
 
-![Screenshot_927](https://github.com/dwipurnomo12/inventorygudang/assets/105181667/a0d2ad61-b4a2-470b-b7d4-40679328b1b2)
+### 🏢 Manajemen Aset
+![Aset](images/aset.png)
 
-![Screenshot_928](https://github.com/dwipurnomo12/inventorygudang/assets/105181667/d64360e9-8496-4f18-bee9-bf1f5223c792)
+---
+
+### 📦 Data Barang
+![Barang](images/barang.png)
+
+---
+
+### 👥 Manajemen Pengguna
+![Pengguna](images/pengguna.png)
+
+---
+
+### 🔐 Manajemen Role & Hak Akses
+![Role](images/role.png)
+
+---
+
+### ⚙️ Pengaturan Sistem
+![Pengaturan](images/pengaturan.png)
+
+---
+
+### 📋 Aktivitas Pengguna
+![Aktivitas](images/aktivitas.png)
 
 
 
