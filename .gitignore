@@ -26,3 +26,8 @@ yarn-error.log
 # Database Backup
 *.sql
 database/*.sql
+
+# Laravel Cache & Session
+/storage/framework/sessions/*
+/storage/framework/cache/*
+/storage/framework/views/*
