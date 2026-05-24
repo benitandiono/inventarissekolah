@@ -704,8 +704,8 @@
                         <div class="avatar-wrap" onclick="document.getElementById('avatar').click()">
                             <div class="avatar-ring-wrap"></div>
                             <img id="avatarPreview"
-                                 src="{{ $user->avatar ? asset('storage/avatars/'.$user->avatar) : asset('assets/img/avatar/avatar-1.png') }}"
-                                 alt="Avatar">
+     src="{{ $user->avatar ? asset('storage/'.$user->avatar) : asset('assets/img/avatar/avatar-1.png') }}"
+     alt="Avatar">
                             <div class="avatar-overlay">
                                 <i class="bi bi-camera-fill"></i>
                                 <span>Ganti Foto</span>
