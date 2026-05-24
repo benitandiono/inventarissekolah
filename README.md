@@ -82,44 +82,111 @@ untuk manajemen inventaris sekolah.
 - Laravel Excel
 
 
+# ⚙️ Instalasi Aplikasi
 
+Ikuti langkah berikut untuk menjalankan aplikasi di komputer lokal.
 
+---
 
+## 📥 1. Clone Repository
 
+Lakukan clone project atau download manual repository ini.
 
-## Installasi
+```bash
+git clone https://github.com/benitandiono/inventarissekolah.git
+```
 
-Lakukan Clone Project/Unduh manual 
+Masuk ke folder project:
 
-Buat database dengan nama 'inventarissekolah'
+```bash
+cd inventarissekolah
+```
 
-Jika melakukan Clone Project, rename file .env.example dengan env dan hubungkan
-database nya dengan mengisikan nama database, 'DB_DATABASE=inventarissekolah'
+---
 
+## 🗄️ 2. Buat Database
 
-Kemudian, Ketik pada terminal :
-```sh
+Buat database baru di MySQL / phpMyAdmin dengan nama:
+
+```bash
+inventarissekolah
+```
+
+---
+
+## ⚙️ 3. Konfigurasi File Environment
+
+Rename file:
+
+```bash
+.env.example
+```
+
+menjadi:
+
+```bash
+.env
+```
+
+Kemudian hubungkan database pada file `.env`:
+
+```env
+DB_DATABASE=inventarissekolah
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+---
+
+## 📦 4. Install Dependency
+
+Jalankan perintah berikut pada terminal:
+
+```bash
+composer install
+```
+
+Lalu generate key aplikasi:
+
+```bash
+php artisan key:generate
+```
+
+---
+
+## 🛠️ 5. Migrasi & Seeder Database
+
+Jalankan migrasi database:
+
+```bash
 php artisan migrate
 ```
 
-Lalu ketik juga
+Kemudian jalankan seeder:
 
-```sh
+```bash
 php artisan migrate:fresh --seed
 ```
 
-Jalankan aplikasi 
+---
 
-```sh
+## ▶️ 6. Jalankan Aplikasi
+
+```bash
 php artisan serve
 ```
 
-Akses Aplikasi di Web browser 
-```sh
-127.0.0.1:8000
+---
+
+## 🌐 7. Akses Aplikasi
+
+Buka browser dan akses:
+
+```bash
+http://127.0.0.1:8000
 ```
 
-
+---
 
 ## 📸 Tampilan Aplikasi
 
