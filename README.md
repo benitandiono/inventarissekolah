@@ -7,29 +7,89 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-# Sistem Informasi Inventory Gudang
+# Sistem Inventaris Sekolah
 
+Desain aplikasi dengan konsep  
+## Modern, Transparan & Profesional  
+untuk manajemen inventaris sekolah.
 
-## Fitur
-- Data Master
-    1. Data Barang
-    2. Jenis
-    3. Satuan
-    4. Perusahaan
-        - Customer
-        - Supplier
-- Transaksi
-    1. Barang Masuk
-    2. Barang Keluar
-- Laporan
-    1. Laporan Stok (Print)
-    2. Laporan Barang Masuk (Print)
-    3. Laporan Barang Keluar (Print)
-- Manajemen User
-    1. Data Pengguna/User
-    2. Hak Akses/Role
-    3. Acitvity Log
-- Ubah Password
+---
+
+# ✨ Fitur Aplikasi
+
+## 🔐 Keamanan & Akses Pengguna
+- **Single Session**  
+  Satu akun hanya dapat login dari satu perangkat pada saat bersamaan.
+
+- **Reset Password & Reset Sesi Login**  
+  Super Admin dapat mengelola akses pengguna dengan mudah.
+
+- **Manajemen Pengguna & Role**  
+  Mendukung berbagai role dan hak akses sesuai tanggung jawab masing-masing pengguna.
+
+---
+
+## 🏢 Manajemen Inventaris
+- **Manajemen Aset Tetap**  
+  Input aset baru, riwayat aset terhapus, serta export laporan PDF & Excel.
+
+- **Manajemen Data Barang Bertahap**  
+  Input kategori, satuan, kemudian data barang agar lebih terstruktur.
+
+- **Kelola Data Relasi**  
+  Manajemen data supplier serta data guru & tenaga kependidikan.
+
+---
+
+## 📦 Transaksi & Monitoring
+- **Barang Masuk & Barang Keluar**  
+  Pencatatan transaksi real-time dengan validasi stok minimal.
+
+- **Pelaporan & Monitoring**  
+  Tersedia 3 sub menu laporan:
+  - Laporan Stok Barang
+  - Laporan Barang Masuk
+  - Laporan Barang Keluar
+
+- **Monitoring Aktivitas User**  
+  Super Admin dan Admin dapat melihat seluruh aktivitas pengguna dalam sistem.
+
+---
+
+## ✅ Validasi Sistem
+- **Pencegahan Data Aset Ganda**  
+  Sistem otomatis mendeteksi aset duplikat.
+
+- **Validasi Data Barang**  
+  Memastikan kategori, satuan, dan barang tetap unik.
+
+- **Riwayat Penghapusan Aset**  
+  Seluruh aset yang dihapus tercatat untuk audit trail.
+
+- **Validasi Stok Minimal**  
+  Sistem mencegah pengeluaran barang di bawah batas minimal.
+
+---
+
+## ⚙️ Konfigurasi & Bantuan
+- **Custom Nama Instansi**  
+  Super Admin dapat mengubah nama sekolah dan konfigurasi dasar sistem.
+
+- **Panduan & Alur Penggunaan Sistem**  
+  Membantu pengguna memahami cara kerja aplikasi secara lengkap.
+
+---
+
+# 🚀 Teknologi Yang Digunakan
+- Laravel 12.x
+- PHP 8.x
+- MySQL
+- Bootstrap / Tailwind CSS
+- JavaScript
+- Chart.js
+- DomPDF
+- Laravel Excel
+
 
 
 
