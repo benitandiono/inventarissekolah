@@ -10,9 +10,6 @@
 # Sistem Informasi Inventory Gudang
 
 
-Sistem Informasi Inventory Gudang Berbasis Web adalah aplikasi atau sistem yang digunakan untuk mengelola inventaris atau stok barang di dalam gudang melalui platform web. Sistem ini dirancang untuk memudahkan proses pengelolaan, pemantauan, dan pengendalian persediaan barang secara efisien.
-
-
 ## Fitur
 - Data Master
     1. Data Barang
