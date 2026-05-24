@@ -124,7 +124,7 @@ Akses Aplikasi di Web browser
 ## Screenshoot
 ![Dashboard](images/Screenshot%202026-05-24%20205212.png)
 
-![Dashboard](images/Halamanaset.png)
+![Dashboard](images/Halaman_aset.png)
 
 ![Screenshot_926](https://github.com/dwipurnomo12/inventorygudang/assets/105181667/b7e9824b-c8b5-4078-8d7d-7b26ffaf5460)
 
